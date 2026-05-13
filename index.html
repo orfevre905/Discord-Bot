@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bot Legal Pages</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Inter, Arial, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #111827);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      overflow: hidden;
+    }
+
+    .background-glow {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(88, 101, 242, 0.25), transparent 70%);
+      top: -150px;
+      right: -150px;
+      z-index: 0;
+    }
+
+    .card {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 700px;
+      background: rgba(17, 24, 39, 0.85);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 28px;
+      padding: 48px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(88, 101, 242, 0.15);
+      border: 1px solid rgba(88, 101, 242, 0.4);
+      color: #c7d2fe;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 16px;
+      line-height: 1.1;
+    }
+
+    p {
+      color: #cbd5e1;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 36px;
+    }
+
+    .links {
+      display: grid;
+      gap: 18px;
+    }
+
+    .link-card {
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      padding: 22px;
+      transition: 0.25s ease;
+      color: white;
+    }
+
+    .link-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(88, 101, 242, 0.5);
+      background: rgba(88, 101, 242, 0.08);
+      box-shadow: 0 10px 30px rgba(88, 101, 242, 0.2);
+    }
+
+    .link-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .link-description {
+      color: #94a3b8;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      margin-top: 36px;
+      color: #64748b;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    @media (max-width: 700px) {
+      .card {
+        padding: 32px 24px;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="background-glow"></div>
+
+  <div class="card">
+    <div class="badge">Discord Bot • Legal Pages</div>
+
+    <h1>Your Bot Legal Center</h1>
+
+    <p>
+      Welcome to the official legal and policy pages for this Discord bot.
+      Here you can view the Privacy Policy and Terms of Service.
+    </p>
+
+    <div class="links">
+      <a class="link-card" href="privacy-policy.md">
+        <div class="link-title">Privacy Policy</div>
+        <div class="link-description">
+          Learn what data is collected, how it is used, and how it is protected.
+        </div>
+      </a>
+
+      <a class="link-card" href="terms-of-service.md">
+        <div class="link-title">Terms of Service</div>
+        <div class="link-description">
+          Review the rules, usage guidelines, and limitations related to the bot.
+        </div>
+      </a>
+    </div>
+
+    <footer>
+      © 2026 Discord Bot • All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
